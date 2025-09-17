@@ -15,7 +15,147 @@
       "skip_topics": ["budgeting"]
     }
   },
-  "majors": ["Game Design", "Computer Science", "Architecture", "Physics", "Medicine", "Music Production"],
+
+  "learning_categories": [
+    "university", "self-taught", "hobbyist", "professional", "soft skills", 
+    "languages", "arts", "health", "survival", "military",
+    "dark arts and how to defend them (manipulation, crime, etc)", 
+    "things other people can that you can't", "other"
+  ],
+
+  "learning_categories_courses": [
+    {
+      "label": "Soft skills",
+      "majors": [
+        {"name": "Conversation & Rapport", "courses": ["Openers→depth", "Turn-taking signals", "Story beats & callbacks"]},
+        {"name": "Cognitive Empathy", "courses": ["Reflect→Label→Check (RLC)", "Steel-manning", "Conflict scripts under pressure"]},
+        {"name": "Negotiation (Builder’s Cut)", "courses": ["BATNA in practice", "MESO offers", "Anchors & counters"]}
+      ]
+    },
+    {
+      "label": "Languages",
+      "majors": [
+        {"name": "Hungarian (accelerated)", "courses": ["Survival slots", "Def/indef conjugation", "Cases in action"]},
+        {"name": "Linguistics for Learners", "courses": ["Phonetics vs phonology", "Word order typology", "Writing systems"]}
+      ]
+    },
+    {
+      "label": "Arts",
+      "majors": [
+        {"name": "Drawing (advanced)", "courses": ["Complex perspective", "Edge control", "Composition rhythm"]},
+        {"name": "Digital Painting", "courses": ["Grisaille→color", "Material studies", "Color scripts"]},
+        {"name": "Typography & Layout", "courses": ["Hierarchy & grid", "Micro-type", "Variable fonts"]}
+      ]
+    },
+    {
+      "label": "Health",
+      "majors": [
+        {"name": "Human Physiology (applied)", "courses": ["Energy systems", "Muscle & nerve", "Sleep & recovery"]},
+        {"name": "Nutrition (evidence-based)", "courses": ["Macros/micros", "Fiber & microbiome", "Supplements: what holds up?"]}
+      ]
+    },
+    {
+      "label": "Survival",
+      "majors": [
+        {"name": "Wilderness Basics", "courses": ["Shelter→water→fire", "Nav without GPS", "Risk triage"]},
+        {"name": "Urban Resilience", "courses": ["Blackout playbook", "Water & sanitation", "Neighborhood comms"]}
+      ]
+    },
+    {
+      "label": "Military / Strategy",
+      "majors": [
+        {"name": "Strategy & Tactics (non-classified)", "courses": ["Sun Tzu→Luttwak tour", "OODA loops", "Logistics beats tactics"]},
+        {"name": "History of Campaigns (case methods)", "courses": ["Marathon→Midway", "Coalitions & morale", "Technology shocks"]}
+      ]
+    },
+    {
+      "label": "Adversarial thinking & defenses",
+      "majors": [
+        {"name": "Social Engineering Awareness", "courses": ["Pretext patterns", "Influence levers (defensive)", "Anti-phishing rituals"]},
+        {"name": "Misinformation Hygiene", "courses": ["Heuristics & biases", "Source triangulation", "Narrative attacks & counters"]},
+        {"name": "Fraud & Cyber Hygiene", "courses": ["Attack surfaces (non-technical)", "2FA & keys", "Incident playbooks"]}
+      ]
+    },
+    {
+      "label": "“Things other people can that you can’t”",
+      "majors": [
+        {"name": "Everyday Micro-Skills", "courses": ["Touch typing at 90+ WPM", "Memory palaces for names", "Speed reading without fakery"]},
+        {"name": "Creative Party Tricks", "courses": ["Rapid sketch portraits", "Cold reading (ethical demo)", "Short-form storytelling"]}
+      ]
+    },
+    {
+      "label": "Cognitive tools",
+      "majors": [
+        {"name": "Decision Science for Builders", "courses": ["Bayes by back-of-the-envelope", "Fermi habits", "Red-team premortems"]},
+        {"name": "Learning Engineering", "courses": ["SRS you’ll keep", "Deliberate practice loops", "Atomic note systems"]}
+      ]
+    },
+    {
+      "label": "Business & Product (no budgeting)",
+      "majors": [
+        {"name": "Product Strategy", "courses": ["North-star metrics", "Experiment maps", "Pricing models"]},
+        {"name": "Go-to-Market for Devs", "courses": ["Positioning stories", "Channel tests", "Analytic guardrails"]}
+      ]
+    },
+    {
+      "label": "Law & Society (for non-lawyers)",
+      "majors": [
+        {"name": "Legal Systems in Practice", "courses": ["Investigations→trial flow", "Evidence & forensics basics", "Rights & limits"]},
+        {"name": "Tech & Law", "courses": ["IP primer", "Data protection basics", "Platform liability overview"]}
+      ]
+    },
+    {
+      "label": "History & Geopolitics",
+      "majors": [
+        {"name": "Statecraft & Resources", "courses": ["Energy & trade chokepoints", "Currency power", "Sanctions mechanics"]},
+        {"name": "Turning Points", "courses": ["Printing press", "Industrialization", "Internet & AI waves"]}
+      ]
+    },
+    {
+      "label": "Design & Making",
+      "majors": [
+        {"name": "Industrial Design Sprint", "courses": ["Brief→sketch→CAD", "Prototyping ladders", "DFM/DFA basics"]},
+        {"name": "Woodworking (intermediate)", "courses": ["Dovetails", "Mortise & tenon", "Finishes & defects"]}
+      ]
+    },
+    {
+      "label": "Media & Story",
+      "majors": [
+        {"name": "Filmmaking Basics", "courses": ["Coverage & 180°", "One-light setups", "J/L cuts rhythm"]},
+        {"name": "Data Storytelling", "courses": ["Visual encodings", "Misleading charts to avoid", "Narrative with numbers"]}
+      ]
+    },
+    {
+      "label": "Nature & Fieldcraft",
+      "majors": [
+        {"name": "Birding & Observation", "courses": ["Field marks & song ID", "Seasonality", "Notebook discipline"]},
+        {"name": "Mycology Foundations", "courses": ["Morphology & safety", "Spore prints", "Habitat reading"]}
+      ]
+    },
+    {
+      "label": "Food & Drink",
+      "majors": [
+        {"name": "Cooking Techniques", "courses": ["Sear→rest", "Pan sauces", "Emulsions & gels"]},
+        {"name": "Coffee (Espresso)", "courses": ["Dose–yield–time", "Extraction curve", "Milk texture consistency"]}
+      ]
+    },
+    {
+      "label": "Aviation & Drones",
+      "majors": [
+        {"name": "Drone Ops (legal & safe)", "courses": ["Airspace classes", "Pre-flight checklists", "Filming moves"]},
+        {"name": "Pilot Theory (intro)", "courses": ["Weather basics", "Radio comms", "Navigation fundamentals"]}
+      ]
+    },
+    {
+      "label": "Maritime & Seamanship",
+      "majors": [
+        {"name": "Small-Boat Handling", "courses": ["Points of sail", "Tacking/gybing", "Rules of the road"]},
+        {"name": "Coastal Nav", "courses": ["Charts & bearings", "Tides & currents", "Safety kit"]}
+      ]
+    }
+  ],
+
+  "university_majors_of_interest": ["Game Design", "Computer Science", "Architecture", "Physics", "Medicine", "Music Production"],
   "flavor_queue_prioritized": {
     "1": {
       "abstract_algebra_category_pragmatic": ["objects_morphisms", "functors", "monoids_as_categories", "universal_properties", "adjunctions_intuition"],
@@ -75,8 +215,17 @@
       "gardening_indoor": ["light_levels", "watering_heuristics", "propagation", "soil_mix", "hydroponics_basics"]
     },
     "10": {
-      "astronomy_naked_eye": ["constellations_seasonal", "planets_vs_stars", "meteor_showers", "dark_sky_practice", "moon_phases"]
-    }
+      "astronomy_naked_eye": ["constellations_seasonal", "planets_vs_stars", "meteor_showers", "dark_sky_practice", "moon_phases"],
+      "astrophotography_intro": ["star_trails", "milky_way_planning", "intervalometer_basics", "stacking_workflow", "light_pollution_filters"],
+      "linguistics_general": ["phonetics_vs_phonology", "morphology_basics", "syntax_trees", "typology", "writing_systems"],
+      "mycology_foundations": ["mushroom_morphology", "spore_printing", "habitat_reading", "safety_basics", "field_notetaking"],
+      "philosophy_of_science": ["falsifiability", "paradigms_and_shifts", "bayesian_updates", "model_vs_reality", "ethics_of_experiment"],
+      "archery": ["stance", "nocking", "drawing", "aiming", "release"],
+      "quantum_computing": ["qubits", "superposition", "entanglement", "quantum_gates", "quantum_algorithms"],
+      "cryptography": ["symmetric_encryption", "asymmetric_encryption", "hash_functions", "digital_signatures", "key_management"]
+    },
+    "100 (low interest)": ["blacksmithing", "lockpicking", "tax_law", "foraging", "meteorology"],
+    "1000 (no interest)": ["birding", "sailing", "meteorology", "rock_climbing", "fencing"]
   },
   "studied_microtopics": {
     "algorithms": {
@@ -87,6 +236,14 @@
       "zero_one_bfs": {
         "status": "learned",
         "notes": "deque front/back for 0/1 edges"
+      },
+      "dials_algorithm": {
+        "status": "learned",
+        "notes": "bucket queues (C+1); near-linear for small integer weights"
+      },
+      "dijkstra_invariants": {
+        "status": "learning",
+        "notes": "pop = final distance under non-negative weights; fails with negatives"
       }
     },
     "ml_production": {
