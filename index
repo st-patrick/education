@@ -17,65 +17,101 @@
   },
   "majors": ["Game Design", "Computer Science", "Architecture", "Physics", "Medicine", "Music Production"],
   "flavor_queue_prioritized": {
-    "1": [
-      "abstract_algebra_category_pragmatic",
-      "genetics_systems_biology",
-      "game_theory_mechanism_design",
-      "ml_production",
-      "software_engineering",
-      "algorithms",
-      "probability_statistics",
-      "data_structures",
-      "linear_algebra_applied"
-    ],
-    "2": [
-      "electromagnetism",
-      "numerical_methods_pdes",
-      "classical_mechanics_variational",
-      "databases",
-      "operating_systems",
-      "discrete_math",
-      "calculus_multivariable",
-      "calculus_single_variable"
-    ],
-    "3": [
-      "data_analysis_visualization",
-      "memory_systems",
-      "negotiation_builders_cut",
-      "social_skills",
-      "audio_production",
-      "hungarian_language",
-      "drawing_advanced",
-      "concept_art",
-      "photography_fundamentals",
-      "music_ear_training",
-      "real_stories_about_crime_and_workings_of_legal_systems",
-      "anatomy_physiology",
-      "human_development",
-      "nutrition"
-    ],
-    "4": [
-      "writing_nonfiction",
-      "compilers",
-      "networking",
-      "physical_product_design",
-      "cpp_modern",
-      "python_programming",
-      "product_strategy_builders",
-      "game_design_systems",
-      "typography",
-      "filmmaking_basics",
-      "baking_basics",
-      "coffee_drip",
-      "cooking_techniques",
-      "Blender3D_advanced_basics"
-    ],
-    "5": [
-      "woodworking_basics",
-      "gardening_indoor"
-    ],
-    "10": [
-      "astronomy_naked_eye"
-    ]
+    "1": {
+      "abstract_algebra_category_pragmatic": ["objects_morphisms", "functors", "monoids_as_categories", "universal_properties", "adjunctions_intuition"],
+      "genetics_systems_biology": ["gene_regulatory_networks", "feedback_loops", "stochastic_expression", "CRISPR_basics", "metabolic_pathways"],
+      "game_theory_mechanism_design": ["vickrey_auction", "vcg_mechanisms", "best_response_dominance", "mixed_strategies", "price_of_anarchy"],
+      "ml_production": ["feature_stores_lineage", "offline_online_parity", "serving_patterns", "monitoring_alerting", "canary_rollback"],
+      "software_engineering": ["testing_pyramids", "code_review_checklists", "observability_tracing", "refactoring_tactics", "domain_driven_design"],
+      "algorithms": ["dijkstra_invariants", "zero_one_bfs", "dials_algorithm", "monotonic_queue", "union_find"],
+      "probability_statistics": ["distribution_families", "clt", "hypothesis_tests", "power_analysis", "multiple_testing"],
+      "data_structures": ["heap_variants", "hashing_open_addressing", "btrees_bplus", "tries_bloom_filters", "disjoint_set_union"],
+      "linear_algebra_applied": ["svd_pca", "least_squares", "eigendecomposition", "matrix_calculus", "numerical_stability"]
+    },
+    "2": {
+      "electromagnetism": ["maxwell_big_picture", "fields_potentials", "boundary_conditions", "transmission_lines", "em_waves_guides"],
+      "numerical_methods_pdes": ["finite_difference_stability", "finite_element_basics", "courant_condition", "multigrid_idea", "spectral_methods"],
+      "classical_mechanics_variational": ["lagrangian_principle", "euler_lagrange", "constraints_lagrange_multipliers", "noether_intuition", "hamiltonian_overview"],
+      "databases": ["normal_forms", "indexes_and_plans", "transactions_isolation", "sharding_replication", "cdc_change_data_capture"],
+      "discrete_math": ["graphs_basics", "combinatorics_counting", "recurrences", "logic_proofs", "inclusion_exclusion"],
+      "calculus_multivariable": ["grad_div_curl", "jacobian_change_of_variables", "line_surface_integrals", "taylor_multivariate", "lagrange_multipliers"],
+      "calculus_single_variable": ["limits_continuity", "series_convergence", "integration_tricks", "taylor_series", "optimization"]
+    },
+    "3": {
+      "operating_systems": ["processes_threads", "scheduling", "virtual_memory", "filesystems", "syscalls_context_switch"],
+      "data_analysis_visualization": ["tidy_data", "visual_encoding", "grammar_of_graphics", "dashboard_principles", "statistical_pitfalls"],
+      "memory_systems": ["spaced_repetition_design", "mnemonic_images", "retrieval_practice", "interleaving", "habit_loop"],
+      "social_skills": ["conversation_openers", "turn_taking_signals", "flirting_frames_respectful", "reading_subtext", "active_listening_RLC", "empathy_accurate_mirroring", "boundary_setting"],
+      "audio_production": ["gain_staging", "compression_attack_release", "reverb_predelay", "stereo_mid_side", "lufs_match"],
+      "hungarian_language": ["survival_phrases", "vowel_harmony", "definite_indefinite_conjugation", "cases_locative", "word_order_focus"],
+      "drawing_advanced": ["complex_perspective", "gesture_to_structure", "anatomy_landmarks", "edge_control", "composition_rhythm", "line_economy", "master_copies"],
+      "concept_art": ["ideation_thumbnails", "shape_language", "value_comps", "kitbash_3D_to_2D", "color_scripts"],
+      "photography_fundamentals": ["exposure_triangle", "composition_basics", "manual_focus", "color_grading_basics"],
+      "music_ear_training": ["intervals", "chord_quality_id", "functional_harmony", "rhythm_subdivision", "melodic_dictation"],
+      "real_stories_about_crime_and_workings_of_legal_systems": ["penal_system_overview", "case_studies", "investigative_procedures", "forensics_basics", "courtroom_dynamics"],
+      "anatomy_physiology": ["skeletal_system", "muscle_groups", "nervous_system", "cardiovascular", "respiratory"],
+      "human_development": ["cognitive_stages", "language_acquisition", "attachment_styles", "adolescence_brain", "aging"],
+      "nutrition": ["macros_micros", "energy_balance", "fiber_microbiome", "supplements_evidence", "meal_planning_basics"]
+    },
+    "4": {
+      "negotiation_builders_cut": ["BATNA", "MESO_offers", "anchoring", "labeling_emotions", "calibrated_questions"],
+      "writing_nonfiction": ["clear_claims_evidence", "paragraph_structure", "story_examples", "editing_passes_cut20", "voice_style"],
+      "compilers": ["lexing", "parsing_LL1", "ast_design", "semantic_checks", "bytecode_emitter"],
+      "networking": ["tcp_udp", "http2_http3", "routing_dns", "tls_handshake", "latency_budget"],
+      "physical_product_design": ["design_brief", "sketch_to_CAD", "prototyping_lofi_hifi", "DFM_DFA", "usability_testing"],
+      "cpp_modern": ["value_categories", "RAII", "move_semantics", "templates_constraints", "small_vector"],
+      "python_programming": ["dataclasses", "typing_mypy", "asyncio", "pandas_vectorization", "packaging_poetry"],
+      "product_strategy_builders": ["north_star_metrics", "experimentation", "pricing_models", "growth_loops", "roadmapping"],
+      "game_design_systems": ["feedback_loops", "economy_design", "difficulty_curves", "procedural_generation", "telemetry_balancing"],
+      "typography": ["hierarchy_rhythm", "type_pairing", "grid_systems", "microtypography", "variable_fonts"],
+      "filmmaking_basics": ["shot_coverage", "180_rule", "lighting_one_key", "editing_JL_cuts", "sound_design_basics"],
+      "baking_basics": ["hydration_gluten", "preferments", "lamination_intro", "oven_spring", "crumb_analysis"],
+      "coffee_drip": ["grind_size", "bloom_ratio", "pour_patterns", "water_quality", "extraction_troubleshooting"],
+      "cooking_techniques": ["sear_and_rest", "pan_sauces", "braise_basics", "emulsions", "starches_gels"],
+      "Blender3D_advanced_basics": ["modifiers_stack", "clean_topology", "lighting_cycles", "camera_composition", "materials_nodes"]
+    },
+    "5": {
+      "woodworking_basics": ["layout_marking", "handcut_dovetails", "mortise_tenon", "finishing_fundamentals", "safety_jigs"],
+      "gardening_indoor": ["light_levels", "watering_heuristics", "propagation", "soil_mix", "hydroponics_basics"]
+    },
+    "10": {
+      "astronomy_naked_eye": ["constellations_seasonal", "planets_vs_stars", "meteor_showers", "dark_sky_practice", "moon_phases"]
+    }
+  },
+  "studied_microtopics": {
+    "algorithms": {
+      "monotonic_queue": {
+        "status": "learned",
+        "notes": "sliding-window max/min; O(n) deque intuition"
+      },
+      "zero_one_bfs": {
+        "status": "learned",
+        "notes": "deque front/back for 0/1 edges"
+      }
+    },
+    "ml_production": {
+      "feature_stores_lineage": {
+        "status": "learned",
+        "notes": "event_time vs write_time; no time travel"
+      }
+    },
+    "compilers": {
+      "lexing": {
+        "status": "learned",
+        "notes": "maximal munch; keywords after"
+      }
+    },
+    "audio_production": {
+      "compression_attack_release": {
+        "status": "learning",
+        "notes": "snare punch; attack vs release; FL Studio setup"
+      }
+    },
+    "game_theory": {
+      "mixed_strategies_penalty_kicks": {
+        "status": "learned",
+        "notes": "p=5/13 left; randomize to make opponent indifferent"
+      }
+    }
   }
 }
