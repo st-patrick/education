@@ -1,19 +1,20 @@
 {
-  "majors": ["Computer Science"],
+  "version": "0.2",
   "meta": {
-    "owner": "Patrick",
+    "owner": "Patrick Reinbold",
     "time_per_week_hours": 10,
     "goals_3_month": ["strong_foundations", "explore_widely"],
-    "assessment": ["quizzes", "projects", "problem_sets", "code_review"],
+    "assessment": ["quizzes", "projects", "problem_sets", "code_review"]
   },
+  "majors": ["Computer Science"],
   "flavor_queue": [
-    {"id": "abstract_algebra_category_pragmatic", "priority": 1},
-    {"id": "genetics_systems_biology", "priority": 1},
-    {"id": "game_theory_mechanism_design", "priority": 1},
-    {"id": "numerical_methods_pdes", "priority": 2},
-    {"id": "classical_mechanics_variational", "priority": 2}
-  ]
-,
+    {"label": "abstract_algebra_category_pragmatic", "priority": 1},
+    {"label": "genetics_systems_biology", "priority": 1},
+    {"label": "game_theory_mechanism_design", "priority": 1},
+    {"label": "numerical_methods_pdes", "priority": 2},
+    {"label": "classical_mechanics_variational", "priority": 2}
+  ],
+
   "schema": {
     "microtopic": {
       "id": "string",
@@ -24,8 +25,30 @@
       "description": "string",
       "evidence": {"quizbank": ["item_id"], "project": "optional string"}
     },
-    "mastery_record": {"status": "unassessed|learning|mastered", "last_score": "0..100|null", "attempts": 0, "artifacts": ["link"], "notes": "string"}
+    "mastery_record": {"status": "unassessed|learning|mastered", "last_score": "0..100|null", "attempts": 0, "artifacts": ["link"], "notes": "string"},
+    "interest_item": {"id": "string", "title": "string", "domain": "string", "interest": 0}
   },
+
+  "horizon_interests": [
+    {"id": "draw.advanced.fundamentals", "title": "Drawing advanced fundamentals", "domain": "art", "interest": 2},
+    {"id": "paint.color_mixing", "title": "Color mixing & value", "domain": "art", "interest": 1},
+    {"id": "sew.basics", "title": "Sewing: seams & hems", "domain": "craft", "interest": 1},
+    {"id": "sing.breath_support", "title": "Singing: breath & support", "domain": "music", "interest": 1},
+    {"id": "cook.knife_skills", "title": "Knife skills + safety", "domain": "cooking", "interest": 2},
+    {"id": "cook.mother_sauces", "title": "Mother sauces mini", "domain": "cooking", "interest": 1},
+    {"id": "mind.cog_empathy", "title": "Cognitive empathy (listen, mirror, map)", "domain": "soft_skills", "interest": 2},
+    {"id": "memory.srs", "title": "Memory: spaced repetition that sticks", "domain": "meta_learning", "interest": 2},
+    {"id": "photo.exposure", "title": "Photography: exposure triangle", "domain": "creative", "interest": 1}
+  ],
+
+  "microtopics_extra": [
+    {"id": "draw.line_value", "title": "Line, shape, value scales", "domain": "art", "depends_on": [], "weight": 1, "description": "Gesture→contour→value ladder."},
+    {"id": "cook.julienne_dice", "title": "Julienne/brane/medium dice", "domain": "cooking", "depends_on": [], "weight": 1, "description": "Grip, claw, flats; consistency."},
+    {"id": "budget.envelope_flow", "title": "Envelope method flow", "domain": "life_admin", "depends_on": [], "weight": 1, "description": "Assign every €; reconcile weekly."},
+    {"id": "mind.active_listening", "title": "Active listening loop", "domain": "soft_skills", "depends_on": [], "weight": 1, "description": "Reflect, label, check: RLC."},
+    {"id": "memory.make_cards", "title": "Make atomic SRS cards", "domain": "meta_learning", "depends_on": [], "weight": 1, "description": "One fact, clear prompt, no trivia."}
+  ],
+
   "microtopics": [
     {"id": "ps.dist_norm", "title": "Normal & Bernoulli families", "domain": "prob_stats", "depends_on": [], "weight": 2, "description": "PDF/PMF, parameters, moments."},
     {"id": "ps.estimation_mle", "title": "MLE + bias/variance", "domain": "prob_stats", "depends_on": ["ps.dist_norm"], "weight": 3, "description": "Consistency, efficiency, invariance."},
@@ -80,7 +103,6 @@
     {"id": "gt.mixed_ne", "title": "Mixed Nash equilibrium", "domain": "game_theory", "depends_on": ["gt.best_response"], "weight": 3, "description": "Indifference conditions; existence."},
     {"id": "gt.auctions_spa_fpa", "title": "Auctions: SPA vs FPA", "domain": "mechanism", "depends_on": ["gt.normal_form"], "weight": 2, "description": "Truthful vs shaded bidding."},
     {"id": "gt.vcg", "title": "VCG & incentive compatibility", "domain": "mechanism", "depends_on": ["gt.auctions_spa_fpa"], "weight": 3, "description": "Dominant strategies; externalities."}
-  ],
   ]
 }
 
