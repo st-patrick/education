@@ -50,8 +50,6 @@
     "papers_ok_if_predigested": true
   },
 
-  "domains_core": ["Computer Science", "Game Design", "Architecture", "Physics", "Medicine", "Music Production"],
-  "langs": { "human": ["Hungarian"], "code": ["JS/TS", "Python", "C++(learn)"] },
   "novelty_vs_depth": { "novelty": 0.5, "depth": 0.5 },
 
   "motivation": {
