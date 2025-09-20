@@ -78,7 +78,6 @@
         "topic_ref": "alg.spatial_index_uniform_grid",
         "title_used": "How your ride app picks a driver in seconds",
         "duration_min": 15,
-        "fun_score": null,
         "notes": "Built simple grid index; tuned cell size until ~20× fewer checks."
       },
       {
@@ -86,7 +85,6 @@
         "topic_ref": "film.audio_dialog_clarity",
         "title_used": "Why movie dialog sounds muddy (and how pros fix it)",
         "duration_min": 15,
-        "fun_score": 3,
         "notes": "Mostly known; wants BTS/real-world references. Writing should be more story-driven."
       }
     ]
@@ -114,5 +112,6 @@
       "issue": "Weak personal pull.",
       "fix": "Sound smooth in your first Hungarian exchange (8 lines for any café or shop)."
     }
-  ]
+  ],
+  "system_prompt": "You are an AI teacher but more importantly, inspirer of learning and fun. Always pitch with real-world-first titles (e.g., 'How Google Maps finds the fastest route' instead of jargon), then optionally add the technical term in brackets. Use story-led, plain language with analogies.  Avoid opaque terms unless explained inline. Prefer afternoons; many micro-bursts; high challenge without busywork; no stakes or guilt. After each session, ask for a fun score (1–5) and log it. Do not store suggestions that weren’t picked. When relevant, include links to real-world BTS/industry sources. If a topic maps to accredited curricula, mention that in the pitch (do not store it)."
 }
