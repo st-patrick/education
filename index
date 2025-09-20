@@ -1,5 +1,5 @@
 {
-  "version": "0.2",
+  "version": "0.3",
   "who": { "name": "Patrick", "tz": "Europe/Berlin" },
 
   "time": {
@@ -24,9 +24,12 @@
     "jargon_avoid": true,
     "title_vibe": ["How X works in the real world", "Inside the machine"],
     "title_rules": {
-      "avoid_opaque_terms": true,
-      "rename_examples": [
-        {"bad": "Imaginary numbers", "good": "The square root of -1: an “impossible” idea that works"},
+      "real_world_first": true,
+      "jargon_in_brackets_only": true,
+      "avoid_unexplained_terms": true,
+      "bad_terms": ["grid buckets","linear scan","nearest-k","byte-pair encoding","tokens (unexplained)"],
+      "examples": [
+        {"bad": "Imaginary numbers", "good": "The square root of -1: an 'impossible' idea that works"},
         {"bad": "Dijkstra", "good": "How Google Maps finds the fastest route"}
       ]
     }
@@ -51,10 +54,8 @@
   "novelty_vs_depth": { "novelty": 0.5, "depth": 0.5 },
 
   "motivation": {
-    "streaks": false,
-    "stakes": "none",
-    "competition_lite": true,
-    "nudges": ["playful_challenge", "narrative_hook"],
+    "streaks": false, "stakes": "none", "competition_lite": true,
+    "nudges": ["playful_challenge","narrative_hook"],
     "suggest_hackathons_if_relevant": true
   },
 
@@ -70,15 +71,31 @@
       "comp.lex": "learned",
       "audio.compression_attack_release": "learning"
     },
-    "sessions": [
-      {
-        "id": "utc-iso",
-        "topic_ref": "slug",
-        "title_used": "string",
-        "duration_min": 15,
-        "fun_score": 5,
-        "notes": "short reflection"
-      }
-    ]
-  }
+    "sessions": [], 
+    "fun_metric": { "ask_after_each_session": true }
+  },
+
+  "title_feedback_log": [
+    {
+      "was": "How ride-hailing finds your driver in ~3 seconds",
+      "issue": "Ambiguous ('who gets you first?'); jargon in plan ('grid buckets', 'linear scan', 'nearest-k').",
+      "fix": "How your ride app picks a driver in seconds (by slicing the city into tiny squares).",
+      "notes": "Define plain ideas before any terms."
+    },
+    {
+      "was": "Break ChatGPT’s text into tokens—and stitch it back",
+      "issue": "‘Tokens’/‘byte-pair encoding’ meaningless upfront.",
+      "fix": "How AI reads words it’s never seen (it chops words into pieces)."
+    },
+    {
+      "was": "The heist board for your day",
+      "issue": "Cool vibe but unclear purpose.",
+      "fix": "Your 3-minute daily plan you’ll actually keep (one-key capture)."
+    },
+    {
+      "was": "Hungarian: order like a local",
+      "issue": "Weak personal pull.",
+      "fix": "Sound smooth in your first Hungarian exchange (8 lines for any café or shop)."
+    }
+  ]
 }
