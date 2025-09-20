@@ -24,7 +24,13 @@
   "schema": {
     "meta_category": {
       "major": {
+        "priority": "number|null",
+        "status": "string|null",
+
         "course": {
+          "priority": "number|null",
+          "status": "string|null",
+
           "micro-topic": {
             "priority": "number|null",
             "status": "string|null"
