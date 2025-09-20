@@ -3,159 +3,109 @@
   "meta": {
     "owner": "Patrick Reinbold",
     "time_per_week_hours": 10,
-    "goals_3_month": ["strong_foundations", "explore_widely"],
-    "assessment": ["quizzes", "projects", "problem_sets", "code_review"],
+    "goals_3_month": ["strong_foundations", "explore_widely", "have_fun"],
+    "assessment": ["quizzes", "practical_projects", "problem_sets", "code_review"],
     "preferences": {
       "framing": "Major→Course→Session",
-      "explain_style": "story-led, plain language, no fluff",
+      "explain_style": "story-led, plain language, no fluff, analogies",
       "challenge_bias": "high",
       "pairing_ok": true,
       "language_focus": "Hungarian",
-      "audio_daw": "FL Studio",
-      "skip_topics": ["budgeting"]
+      "audio_daw": "FL Studio"
     }
   },
 
-  "learning_categories": [
-    "university", "self-taught", "hobbyist", "professional", "soft skills", 
-    "languages", "arts", "health", "survival", "military",
-    "dark arts and how to defend them (manipulation, crime, etc)", 
-    "things other people can that you can't", "other"
-  ],
-
-  "learning_categories_courses": [
-    {
-      "label": "Soft skills",
-      "majors": [
-        {"name": "Conversation & Rapport", "courses": ["Openers→depth", "Turn-taking signals", "Story beats & callbacks"]},
-        {"name": "Cognitive Empathy", "courses": ["Reflect→Label→Check (RLC)", "Steel-manning", "Conflict scripts under pressure"]},
-        {"name": "Negotiation (Builder’s Cut)", "courses": ["BATNA in practice", "MESO offers", "Anchors & counters"]}
-      ]
+  "learning_categories_hierarchical": {
+    "university": {
+      "Game Design": [],
+      "Computer Science": [],
+      "Architecture": [],
+      "Physics": [],
+      "Medicine": [],
+      "Music Production": []
     },
-    {
-      "label": "Languages",
-      "majors": [
-        {"name": "Hungarian (accelerated)", "courses": ["Survival slots", "Def/indef conjugation", "Cases in action"]},
-        {"name": "Linguistics for Learners", "courses": ["Phonetics vs phonology", "Word order typology", "Writing systems"]}
-      ]
+    "self-taught": {},
+    "hobbyist": {},
+    "professional": {},
+    "soft skills": {
+      "Conversation & Rapport": ["Openers→depth", "Turn-taking signals", "Story beats & callbacks"],
+      "Cognitive Empathy": ["Reflect→Label→Check (RLC)", "Steel-manning", "Conflict scripts under pressure"]
     },
-    {
-      "label": "Arts",
-      "majors": [
-        {"name": "Drawing (advanced)", "courses": ["Complex perspective", "Edge control", "Composition rhythm"]},
-        {"name": "Digital Painting", "courses": ["Grisaille→color", "Material studies", "Color scripts"]},
-        {"name": "Typography & Layout", "courses": ["Hierarchy & grid", "Micro-type", "Variable fonts"]}
-      ]
+    "languages": {
+      "Hungarian (accelerated)": ["Survival slots", "Def/indef conjugation", "Cases in action"],
+      "Romanian": ["Survival slots", "Def/indef conjugation", "Cases in action"]
     },
-    {
-      "label": "Health",
-      "majors": [
-        {"name": "Human Physiology (applied)", "courses": ["Energy systems", "Muscle & nerve", "Sleep & recovery"]},
-        {"name": "Nutrition (evidence-based)", "courses": ["Macros/micros", "Fiber & microbiome", "Supplements: what holds up?"]}
-      ]
+    "arts": {
+      "Drawing (advanced)": ["Complex perspective", "Edge control", "Composition rhythm"],
+      "Digital Painting": ["Grisaille→color", "Material studies", "Color scripts"]
     },
-    {
-      "label": "Survival",
-      "majors": [
-        {"name": "Wilderness Basics", "courses": ["Shelter→water→fire", "Nav without GPS", "Risk triage"]},
-        {"name": "Urban Resilience", "courses": ["Blackout playbook", "Water & sanitation", "Neighborhood comms"]}
-      ]
+    "health": {
+      "Human Physiology (applied)": ["Energy systems", "Muscle & nerve", "Sleep & recovery", "Anatomy"],
+      "Nutrition (evidence-based)": ["Macros/micros", "Fiber & microbiome", "Supplements: what holds up?"]
     },
-    {
-      "label": "Military / Strategy",
-      "majors": [
-        {"name": "Strategy & Tactics (non-classified)", "courses": ["Sun Tzu→Luttwak tour", "OODA loops", "Logistics beats tactics"]},
-        {"name": "History of Campaigns (case methods)", "courses": ["Marathon→Midway", "Coalitions & morale", "Technology shocks"]}
-      ]
+    "survival": {
+      "Wilderness Basics": ["Shelter→water→fire", "Nav without GPS", "Risk triage"],
+      "Urban Resilience": ["Blackout playbook", "Water & sanitation", "Neighborhood comms"]
     },
-    {
-      "label": "Adversarial thinking & defenses",
-      "majors": [
-        {"name": "Social Engineering Awareness", "courses": ["Pretext patterns", "Influence levers (defensive)", "Anti-phishing rituals"]},
-        {"name": "Misinformation Hygiene", "courses": ["Heuristics & biases", "Source triangulation", "Narrative attacks & counters"]},
-        {"name": "Fraud & Cyber Hygiene", "courses": ["Attack surfaces (non-technical)", "2FA & keys", "Incident playbooks"]}
-      ]
+    "military": {
+      "Strategy & Tactics (non-classified)": ["Sun Tzu→Luttwak tour", "OODA loops", "Logistics beats tactics"],
+      "History of Campaigns (case methods)": ["Marathon→Midway", "Coalitions & morale", "Technology shocks"]
     },
-    {
-      "label": "“Things other people can that you can’t”",
-      "majors": [
-        {"name": "Everyday Micro-Skills", "courses": ["Touch typing at 90+ WPM", "Memory palaces for names", "Speed reading without fakery"]},
-        {"name": "Creative Party Tricks", "courses": ["Rapid sketch portraits", "Cold reading (ethical demo)", "Short-form storytelling"]}
-      ]
+    "dark arts and how to defend them (manipulation, crime, etc)": {
+      "Social Engineering Awareness": ["Pretext patterns", "Influence levers (defensive)", "Anti-phishing rituals"],
+      "Misinformation Hygiene": ["Heuristics & biases", "Source triangulation", "Narrative attacks & counters"],
+      "Fraud & Cyber Hygiene": ["Attack surfaces (non-technical)", "2FA & keys", "Incident playbooks"]
     },
-    {
-      "label": "Cognitive tools",
-      "majors": [
-        {"name": "Decision Science for Builders", "courses": ["Bayes by back-of-the-envelope", "Fermi habits", "Red-team premortems"]},
-        {"name": "Learning Engineering", "courses": ["SRS you’ll keep", "Deliberate practice loops", "Atomic note systems"]}
-      ]
+    "things other people can that you can't": {
+      "Everyday Micro-Skills": ["Touch typing at 90+ WPM", "Memory palaces for names", "Speed reading without fakery"],
+      "Creative Party Tricks": ["Rapid sketch portraits", "Cold reading (ethical demo)", "Short-form storytelling"]
     },
-    {
-      "label": "Business & Product (no budgeting)",
-      "majors": [
-        {"name": "Product Strategy", "courses": ["North-star metrics", "Experiment maps", "Pricing models"]},
-        {"name": "Go-to-Market for Devs", "courses": ["Positioning stories", "Channel tests", "Analytic guardrails"]}
-      ]
+    "other": {},
+    "meta intellect (IQ, logic, math, reading comprehension, etc)": {
+      "Decision Science for Builders": ["Bayes by back-of-the-envelope", "Fermi habits", "Red-team premortems"],
+      "Learning Engineering": ["SRS you’ll keep", "Deliberate practice loops", "Atomic note systems"]
     },
-    {
-      "label": "Law & Society (for non-lawyers)",
-      "majors": [
-        {"name": "Legal Systems in Practice", "courses": ["Investigations→trial flow", "Evidence & forensics basics", "Rights & limits"]},
-        {"name": "Tech & Law", "courses": ["IP primer", "Data protection basics", "Platform liability overview"]}
-      ]
+    "being human (emotion, sense of self, pain management, etc)": {},
+    "experience (things you can learn by doing)": {},
+    "Business & Product (no budgeting)": {
+      "Product Strategy": ["North-star metrics", "Experiment maps", "Pricing models"],
+      "Go-to-Market for Devs": ["Positioning stories", "Channel tests", "Analytic guardrails"]
     },
-    {
-      "label": "History & Geopolitics",
-      "majors": [
-        {"name": "Statecraft & Resources", "courses": ["Energy & trade chokepoints", "Currency power", "Sanctions mechanics"]},
-        {"name": "Turning Points", "courses": ["Printing press", "Industrialization", "Internet & AI waves"]}
-      ]
+    "Law & Society (for non-lawyers)": {
+      "Legal Systems in Practice": ["Investigations→trial flow", "Evidence & forensics basics", "Rights & limits"],
+      "Tech & Law": ["IP primer", "Data protection basics", "Platform liability overview"]
     },
-    {
-      "label": "Design & Making",
-      "majors": [
-        {"name": "Industrial Design Sprint", "courses": ["Brief→sketch→CAD", "Prototyping ladders", "DFM/DFA basics"]},
-        {"name": "Woodworking (intermediate)", "courses": ["Dovetails", "Mortise & tenon", "Finishes & defects"]}
-      ]
+    "History & Geopolitics": {
+      "Statecraft & Resources": ["Energy & trade chokepoints", "Currency power", "Sanctions mechanics"],
+      "Turning Points": ["Printing press", "Industrialization", "Internet & AI waves"]
     },
-    {
-      "label": "Media & Story",
-      "majors": [
-        {"name": "Filmmaking Basics", "courses": ["Coverage & 180°", "One-light setups", "J/L cuts rhythm"]},
-        {"name": "Data Storytelling", "courses": ["Visual encodings", "Misleading charts to avoid", "Narrative with numbers"]}
-      ]
+    "Design & Making": {
+      "Industrial Design Sprint": ["Brief→sketch→CAD", "Prototyping ladders", "DFM/DFA basics"],
+      "Woodworking (intermediate)": ["Dovetails", "Mortise & tenon", "Finishes & defects"]
     },
-    {
-      "label": "Nature & Fieldcraft",
-      "majors": [
-        {"name": "Birding & Observation", "courses": ["Field marks & song ID", "Seasonality", "Notebook discipline"]},
-        {"name": "Mycology Foundations", "courses": ["Morphology & safety", "Spore prints", "Habitat reading"]}
-      ]
+    "Media & Story": {
+      "Filmmaking Basics": ["Coverage & 180°", "One-light setups", "J/L cuts rhythm"],
+      "Data Storytelling": ["Visual encodings", "Misleading charts to avoid", "Narrative with numbers"]
     },
-    {
-      "label": "Food & Drink",
-      "majors": [
-        {"name": "Cooking Techniques", "courses": ["Sear→rest", "Pan sauces", "Emulsions & gels"]},
-        {"name": "Coffee (Espresso)", "courses": ["Dose–yield–time", "Extraction curve", "Milk texture consistency"]}
-      ]
+    "Nature & Fieldcraft": {
+      "Birding & Observation": ["Field marks & song ID", "Seasonality", "Notebook discipline"],
+      "Mycology Foundations": ["Morphology & safety", "Spore prints", "Habitat reading"]
     },
-    {
-      "label": "Aviation & Drones",
-      "majors": [
-        {"name": "Drone Ops (legal & safe)", "courses": ["Airspace classes", "Pre-flight checklists", "Filming moves"]},
-        {"name": "Pilot Theory (intro)", "courses": ["Weather basics", "Radio comms", "Navigation fundamentals"]}
-      ]
+    "Food & Drink": {
+      "Cooking Techniques": ["Sear→rest", "Pan sauces", "Emulsions & gels"],
+      "Coffee (Espresso)": ["Dose–yield–time", "Extraction curve", "Milk texture consistency"]
     },
-    {
-      "label": "Maritime & Seamanship",
-      "majors": [
-        {"name": "Small-Boat Handling", "courses": ["Points of sail", "Tacking/gybing", "Rules of the road"]},
-        {"name": "Coastal Nav", "courses": ["Charts & bearings", "Tides & currents", "Safety kit"]}
-      ]
+    "Aviation & Drones": {
+      "Drone Ops (legal & safe)": ["Airspace classes", "Pre-flight checklists", "Filming moves"],
+      "Pilot Theory (intro)": ["Weather basics", "Radio comms", "Navigation fundamentals"]
+    },
+    "Maritime & Seamanship": {
+      "Small-Boat Handling": ["Points of sail", "Tacking/gybing", "Rules of the road"],
+      "Coastal Nav": ["Charts & bearings", "Tides & currents", "Safety kit"]
     }
-  ],
+  },
 
-  "university_majors_of_interest": ["Game Design", "Computer Science", "Architecture", "Physics", "Medicine", "Music Production"],
+  
   "flavor_queue_prioritized": {
     "1": {
       "abstract_algebra_category_pragmatic": ["objects_morphisms", "functors", "monoids_as_categories", "universal_properties", "adjunctions_intuition"],
@@ -175,7 +125,8 @@
       "databases": ["normal_forms", "indexes_and_plans", "transactions_isolation", "sharding_replication", "cdc_change_data_capture"],
       "discrete_math": ["graphs_basics", "combinatorics_counting", "recurrences", "logic_proofs", "inclusion_exclusion"],
       "calculus_multivariable": ["grad_div_curl", "jacobian_change_of_variables", "line_surface_integrals", "taylor_multivariate", "lagrange_multipliers"],
-      "calculus_single_variable": ["limits_continuity", "series_convergence", "integration_tricks", "taylor_series", "optimization"]
+      "calculus_single_variable": ["limits_continuity", "series_convergence", "integration_tricks", "taylor_series", "optimization"],
+      "medicine": ["cardiovascular_system", "respiratory_system", "renal_system", "nervous_system", "gastrointestinal_system"]
     },
     "3": {
       "operating_systems": ["processes_threads", "scheduling", "virtual_memory", "filesystems", "syscalls_context_switch"],
@@ -211,6 +162,10 @@
       "Blender3D_advanced_basics": ["modifiers_stack", "clean_topology", "lighting_cycles", "camera_composition", "materials_nodes"]
     },
     "5": {
+      "Maya w Renderman": ["interface_navigation", "modeling_basics", "uv_mapping", "basic_renderman", "lighting_cameras"],
+      "budgeting_personal_finance": ["tracking_expenses", "budget_methods", "debt_strategies", "savings_goals", "investing_basics"],
+    },
+    "6": {
       "woodworking_basics": ["layout_marking", "handcut_dovetails", "mortise_tenon", "finishing_fundamentals", "safety_jigs"],
       "gardening_indoor": ["light_levels", "watering_heuristics", "propagation", "soil_mix", "hydroponics_basics"]
     },
@@ -227,6 +182,8 @@
     "100 (low interest)": ["blacksmithing", "lockpicking", "tax_law", "foraging", "meteorology"],
     "1000 (no interest)": ["birding", "sailing", "meteorology", "rock_climbing", "fencing"]
   },
+
+
   "studied_microtopics": {
     "algorithms": {
       "monotonic_queue": {
