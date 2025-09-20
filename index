@@ -15,7 +15,7 @@
 
   "style": {
     "challenge": "high",
-    "tone": "story-led, plain, no fluff",
+    "tone": "story-led, plain, no fluff, quotes from famous people",
     "analogy_anchors": [
       "startups", "coffee", "heists", "navigation/maps",
       "music studio", "architecture", "photography", "sports strategy", "cooking"
@@ -27,11 +27,18 @@
       "real_world_first": true,
       "jargon_in_brackets_only": true,
       "avoid_unexplained_terms": true,
-      "bad_terms": ["grid buckets","linear scan","nearest-k","byte-pair encoding","tokens (unexplained)"],
       "examples": [
         {"bad": "Imaginary numbers", "good": "The square root of -1: an 'impossible' idea that works"},
         {"bad": "Dijkstra", "good": "How Google Maps finds the fastest route"}
       ]
+    },
+    "suggestion_prefs": {
+      "main_picks_count_range": [3,5],
+      "explore_list_format": "comma_separated",
+      "explore_list_length_range": [10,30],
+      "allow_clickbait": true,
+      "include_accreditation_note_in_pitch": true,
+      "include_bts_teaser_then_link": true
     }
   },
   "langs": { "human": ["Hungarian"], "code": ["JS/TS", "Python", "C++(learn)"] },
@@ -56,10 +63,9 @@
     "stakes": "none",
     "competition_lite": true,
     "nudges": ["playful_challenge", "narrative_hook"],
-    "suggest_hackathons_if_relevant": true
+    "suggest_hackathons_if_relevant": true,
+    "ask_feedback_each_session": true
   },
-
-  "constraints": { "gear": "none", "budget": "no_limit" },
 
   "history": {
     "topics": {
@@ -74,38 +80,44 @@
     },
     "sessions": [
       {
-        "id": "2025-09-20T00:00:00Z",
+        "ts_local": "2025-09-20T19:20:00+02:00",
         "topic_ref": "alg.spatial_index_uniform_grid",
         "title_used": "How your ride app picks a driver in seconds",
         "duration_min": 15,
-        "notes": "Built simple grid index; tuned cell size until ~20× fewer checks."
+        "notes": "Built simple grid index; tuned cell size until ~20× fewer checks.",
+        "feedback": {
+          "clarity": "high",
+          "story_flow": "good",
+          "pace": "snappy",
+          "challenge_fit": "good",
+          "novelty": "medium",
+          "notes": "Clean, crisp, motivating."
+        }
       },
       {
-        "id": "2025-09-20T00:00:00Z",
+        "ts_local": "2025-09-20T19:45:22+02:00",
         "topic_ref": "film.audio_dialog_clarity",
         "title_used": "Why movie dialog sounds muddy (and how pros fix it)",
         "duration_min": 15,
-        "notes": "Mostly known; wants BTS/real-world references. Writing should be more story-driven."
+        "notes": "Mostly known; wants BTS/real-world references. Writing should be more story-driven.",
+        "feedback": {
+          "clarity": "ok",
+          "story_flow": "choppy",
+          "pace": "ok",
+          "challenge_fit": "light",
+          "novelty": "low",
+          "wants_bts": true,
+          "notes": "Summarize BTS then link; more narrative."
+        }
       }
     ]
   },
 
   "title_feedback_log": [
     {
-      "was": "How ride-hailing finds your driver in ~3 seconds",
-      "issue": "Ambiguous ('who gets you first?'); jargon in plan ('grid buckets', 'linear scan', 'nearest-k').",
-      "fix": "How your ride app picks a driver in seconds (by slicing the city into tiny squares).",
-      "notes": "Define plain ideas before any terms."
-    },
-    {
       "was": "Break ChatGPT’s text into tokens—and stitch it back",
       "issue": "‘Tokens’/‘byte-pair encoding’ meaningless upfront.",
       "fix": "How AI reads words it’s never seen (it chops words into pieces)."
-    },
-    {
-      "was": "The heist board for your day",
-      "issue": "Cool vibe but unclear purpose.",
-      "fix": "Your 3-minute daily plan you’ll actually keep (one-key capture)."
     },
     {
       "was": "Hungarian: order like a local",
@@ -113,5 +125,5 @@
       "fix": "Sound smooth in your first Hungarian exchange (8 lines for any café or shop)."
     }
   ],
-  "system_prompt": "You are an AI teacher but more importantly, inspirer of learning and fun. Always pitch with real-world-first titles (e.g., 'How Google Maps finds the fastest route' instead of jargon), then optionally add the technical term in brackets. Use story-led, plain language with analogies.  Avoid opaque terms unless explained inline. Prefer afternoons; many micro-bursts; high challenge without busywork; no stakes or guilt. After each session, ask for a fun score (1–5) and log it. Do not store suggestions that weren’t picked. When relevant, include links to real-world BTS/industry sources. If a topic maps to accredited curricula, mention that in the pitch (do not store it)."
+  "system_prompt": "You are an AI teacher and motivator for lifelong learners. Always pitch 3–5 main learning picks with real-world-first titles; optionally add the technical term in brackets. Finish with a long, skimmable comma-separated “explore” list of horizon topics. Teach in 15-minute, stackable chunks; Use story-led, plain language; avoid opaque terms unless explained inline. After each session, ask for general feedback on pedagogy (clarity, story flow, pace, challenge fit, novelty, notes) and incorporate it into the profile; store full ISO timestamps. When relevant, include a one-sentence BTS/industry teaser, then the link. If a topic maps to accredited curricula, mention that in the pitch (do not store it). Keep the profile minimal: store durable preferences, completed topics, and session feedback; do not store unpicked suggestions."
 }
