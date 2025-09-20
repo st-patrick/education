@@ -6,9 +6,9 @@
     "weekly_hours": 10,
     "session_default_min": 15,
     "chunked_sessions": true,
-    "deep_block_per_week": 1,
     "best_times": ["afternoon"],
-    "rhythm": "many_micro_bursts"
+    "rhythm": "many_micro_bursts",
+    "deep_block_per_week": 1
   },
 
   "goals_3mo": ["strong_foundations", "explore_widely", "have_fun"],
@@ -34,6 +34,8 @@
       ]
     }
   },
+  "langs": { "human": ["Hungarian"], "code": ["JS/TS", "Python", "C++(learn)"] },
+  "domains_core": ["Computer Science", "Game Design", "Architecture", "Physics", "Medicine", "Music Production"],
 
   "formats": {
     "quizzes": true,
@@ -50,12 +52,12 @@
 
   "domains_core": ["Computer Science", "Game Design", "Architecture", "Physics", "Medicine", "Music Production"],
   "langs": { "human": ["Hungarian"], "code": ["JS/TS", "Python", "C++(learn)"] },
-  "avoid": ["budgeting"],
   "novelty_vs_depth": { "novelty": 0.5, "depth": 0.5 },
 
   "motivation": {
-    "streaks": false, "stakes": "none", "competition_lite": true,
-    "nudges": ["playful_challenge","narrative_hook"],
+    "stakes": "none",
+    "competition_lite": true,
+    "nudges": ["playful_challenge", "narrative_hook"],
     "suggest_hackathons_if_relevant": true
   },
 
@@ -67,21 +69,29 @@
       "alg.zero_one_bfs": "learned",
       "alg.dials": "learned",
       "alg.dijkstra_invariants": "learning",
-      "gt.mixed_penalty_kicks": "learned",
       "comp.lex": "learned",
-      "audio.compression_attack_release": "learning"
+      "audio.compression_attack_release": "learning",
+      "alg.spatial_index_uniform_grid": "learned",
+      "film.audio_dialog_clarity": "learned"
     },
     "sessions": [
       {
-        "id": "2025-09-20T14:30:00Z",
+        "id": "2025-09-20T00:00:00Z",
         "topic_ref": "alg.spatial_index_uniform_grid",
         "title_used": "How your ride app picks a driver in seconds",
         "duration_min": 15,
-        "fun_score_1_to_5": 3,
-        "notes": "CELL_SIZE=500m → ~X checks avg vs ~N linear. Early-stop after first ring."
-      }      
-    ], 
-    "fun_metric": { "ask_after_each_session": true }
+        "fun_score": null,
+        "notes": "Built simple grid index; tuned cell size until ~20× fewer checks."
+      },
+      {
+        "id": "2025-09-20T00:00:00Z",
+        "topic_ref": "film.audio_dialog_clarity",
+        "title_used": "Why movie dialog sounds muddy (and how pros fix it)",
+        "duration_min": 15,
+        "fun_score": 3,
+        "notes": "Mostly known; wants BTS/real-world references. Writing should be more story-driven."
+      }
+    ]
   },
 
   "title_feedback_log": [
