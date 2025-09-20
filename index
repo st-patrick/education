@@ -35,21 +35,83 @@
   },
 
   "learning_categories_hierarchical": {
-    "survival and safety (first aid, risk triage, situational awareness, navigation)": {},
-    "personal health & wellbeing (sleep, training, nutrition, mental resilience)": {},
-    "being human & self (emotion regulation, sense of self, pain mgmt, meditation)": {},
+    "survival and safety": {
+      "first aid": {},
+      "risk triage": {},
+      "situational awareness": {},
+      "navigation": {}
+    },
+    "personal health & wellbeing": {
+      "sleep": {},
+      "training": {},
+      "nutrition": {},
+      "mental resilience": {}
+    },
+    "being human & self": {
+      "emotion regulation": {},
+      "sense of self": {},
+      "pain management": {},
+      "meditation": {}
+    },
 
-    "values & big questions (everyday ethics, consent & norms, digital citizenship, logic basics)": {},
-    "home & life skills (cooking, fixing small things, travel hacks, organizing)": {},
-    "learn faster (problem framing, memory systems, deliberate practice, goal setting, self-organization, brain training, IQ, logic laws, ...)": {},
-    "school foundations (K–12 core: arithmetic/fractions, reading comp, scientific method, world map & basic civics)": {},
+    "values & big questions": {
+      "everyday ethics": {},
+      "consent & norms": {},
+      "digital citizenship": {},
+      "logic basics": {}
+    },
+    "home & life skills": {
+      "cooking": {},
+      "fixing small things": {},
+      "travel hacks": {},
+      "organizing": {}
+    },
+    "learn faster": {
+      "problem framing": {},
+      "memory systems": {},
+      "deliberate practice": {},
+      "goal setting": {},
+      "self-organization": {},
+      "brain training": {},
+      "IQ": {},
+      "logic laws": {}
+    },
+    "school foundations": {
+      "arithmetic & fractions": {},
+      "reading comprehension": {},
+      "scientific method": {},
+      "world map": {},
+      "basic civics": {}
+    },
 
-    "people skills (conversation, empathy, active listening, negotiation, influence ethics, team leading)": {},
-    "work smarts (experience) (prioritize vs over-engineer, manage up, office politics vs integrity, speed vs polish, stakeholder alignment)": {},
-    "everyday law (your rights in real life situations, contracts, procedure, evidence, tech & law)": {},
+    "people skills": {
+      "conversation": {},
+      "empathy": {},
+      "active listening": {},
+      "negotiation": {},
+      "influence ethics": {},
+      "team leading": {}
+    },
+    "work smarts (experience)": {
+      "prioritize vs over-engineer": {},
+      "managing up": {},
+      "office politics vs integrity": {},
+      "speed vs polish": {},
+      "stakeholder alignment": {}
+    },
+    "everyday law": {
+      "your rights in real life": {},
+      "contracts": {},
+      "procedure": {},
+      "evidence": {},
+      "tech & law": {}
+    },
 
     "university": {},
-    "other professions (military, welding, ...)": {},
+    "other professions": {
+      "military": {},
+      "welding": {}
+    },
     "entrepreneurship": {},
 
     "make & build": {},
@@ -58,7 +120,11 @@
     "nature & outdoors": {},
     "languages": {},
     "things other people can that you can't": {},
-    "tricks & scams — how to spot/stop (manipulation patterns, fraud hygiene, social-engineering defenses)": {},
+    "tricks & scams — how to spot/stop": {
+      "manipulation patterns": {},
+      "fraud hygiene": {},
+      "social-engineering defenses": {}
+    },
 
     "other": {}
   }
