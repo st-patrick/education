@@ -107,7 +107,46 @@
       "tech & law": {}
     },
 
-    "university": {},
+    "university": {
+      "Computer Science": {
+        "Algorithms": {
+          "monotonic queue": { "priority": 1, "status": "learned" },
+          "zero-one BFS": { "priority": 1, "status": "learned" },
+          "Dial's algorithm": { "priority": 1, "status": "learned" },
+          "Dijkstra invariants": { "priority": 1, "status": "learning" }
+        },
+        "Compilers": {
+          "lexing": { "priority": 2, "status": "learned" }
+        },
+        "ML production": {
+          "feature stores & lineage": { "priority": 2, "status": "learned" }
+        }
+      },
+      "Mathematics": {
+        "Probability & Statistics": {},
+        "Linear Algebra (applied)": {}
+      },
+      "Physics": {
+        "Classical Mechanics (variational)": {},
+        "Electromagnetism": {}
+      },
+      "Architecture": {},
+      "Medicine": {
+        "Anatomy & Physiology": {},
+        "Human Development": {}
+      },
+      "Game Design": {},
+      "Music Production": {
+        "Mixing & Dynamics": {
+          "Compression: attack/release": { "priority": 3, "status": "learning" }
+        }
+      },
+      "Economics": {
+        "Game Theory": {
+          "Mixed strategies (penalty kicks)": { "priority": 3, "status": "learned" }
+        }
+      }
+    },
     "other professions": {
       "military": {},
       "welding": {}
@@ -116,9 +155,23 @@
 
     "make & build": {},
     "applied arts": {},
-    "hobbyist": {},
-    "nature & outdoors": {},
-    "languages": {},
+    "hobbyist": {
+      "Coffee (Drip)": {
+        "Brewing techniques": {
+          "Blooming": { "priority": 3, "status": null }
+        }
+      }
+    },
+    "nature & outdoors": {
+      "Astronomy (naked-eye)": {}
+    },
+    "languages": {
+      "Hungarian": {
+        "Faststart": {
+          "Vowel harmony": { "priority": 2, "status": null }
+        }
+      }
+    },
     "things other people can that you can't": {},
     "tricks & scams — how to spot/stop": {
       "manipulation patterns": {},
