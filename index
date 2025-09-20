@@ -17,13 +17,9 @@
     "preferences": {
       "framing": "Meta category→Major→Course→Session aka micro topic",
       "explain_style": "story-led, plain language, no fluff, analogies to real life and other known domains",
-      "challenge_bias": "high",
-      "language_focus": "Hungarian",
-      "audio_daw": "FL Studio"
+      "challenge_bias": "high"
     }
   },
-
-
 
   "schema": {
     "meta_category": {
