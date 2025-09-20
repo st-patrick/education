@@ -35,24 +35,31 @@
   },
 
   "learning_categories_hierarchical": {
-    "survival": {},
-    "personal health": {},
-    "being human (emotion, sense of self, pain management, etc)": {},
-    "meta intellect (IQ, logic, math, reading comprehension, etc)": {},
-    "soft skills": {},
-    "experience (things you can learn by doing)": {},
-    "self-taught": {},
-    "Law & Society (for non-lawyers)": {},
+    "survival and safety (first aid, risk triage, situational awareness, navigation)": {},
+    "personal health & wellbeing (sleep, training, nutrition, mental resilience)": {},
+    "being human & self (emotion regulation, sense of self, pain mgmt, meditation)": {},
+
+    "values & big questions (everyday ethics, consent & norms, digital citizenship, logic basics)": {},
+    "home & life skills (cooking, fixing small things, travel hacks, organizing)": {},
+    "learn faster (problem framing, memory systems, deliberate practice, goal setting, self-organization, brain training, IQ, logic laws, ...)": {},
+    "school foundations (K–12 core: arithmetic/fractions, reading comp, scientific method, world map & basic civics)": {},
+
+    "people skills (conversation, empathy, active listening, negotiation, influence ethics, team leading)": {},
+    "work smarts (experience) (prioritize vs over-engineer, manage up, office politics vs integrity, speed vs polish, stakeholder alignment)": {},
+    "everyday law (your rights in real life situations, contracts, procedure, evidence, tech & law)": {},
+
     "university": {},
-    "non-university professions": {},
-    "professional": {},
-    "Business & Product for indie hackers": {},
+    "other professions (military, welding, ...)": {},
+    "entrepreneurship": {},
+
+    "make & build": {},
     "applied arts": {},
     "hobbyist": {},
-    "foreign languages": {},
+    "nature & outdoors": {},
+    "languages": {},
     "things other people can that you can't": {},
-    "dark arts and how to defend them (manipulation, crime, etc)": {},
-    "other": {},
-    "military": {}
+    "tricks & scams — how to spot/stop (manipulation patterns, fraud hygiene, social-engineering defenses)": {},
+
+    "other": {}
   }
 }
