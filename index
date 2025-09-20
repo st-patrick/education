@@ -71,7 +71,16 @@
       "comp.lex": "learned",
       "audio.compression_attack_release": "learning"
     },
-    "sessions": [], 
+    "sessions": [
+      {
+        "id": "2025-09-20T14:30:00Z",
+        "topic_ref": "alg.spatial_index_uniform_grid",
+        "title_used": "How your ride app picks a driver in seconds",
+        "duration_min": 15,
+        "fun_score_1_to_5": 3,
+        "notes": "CELL_SIZE=500m → ~X checks avg vs ~N linear. Early-stop after first ring."
+      }      
+    ], 
     "fun_metric": { "ask_after_each_session": true }
   },
 
