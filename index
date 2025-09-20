@@ -1,27 +1,84 @@
 {
-  "version": "0.1",
+  "version": "0.2",
   "who": { "name": "Patrick", "tz": "Europe/Berlin" },
-  "time": { "weekly_hours": 10, "session_default_min": null, "best_times": [] },
+
+  "time": {
+    "weekly_hours": 10,
+    "session_default_min": 15,
+    "chunked_sessions": true,
+    "deep_block_per_week": 1,
+    "best_times": ["afternoon"],
+    "rhythm": "many_micro_bursts"
+  },
+
   "goals_3mo": ["strong_foundations", "explore_widely", "have_fun"],
+
   "style": {
     "challenge": "high",
     "tone": "story-led, plain, no fluff",
-    "analogy_anchors": [],
+    "analogy_anchors": [
+      "startups", "coffee", "heists", "navigation/maps",
+      "music studio", "architecture", "photography", "sports strategy", "cooking"
+    ],
+    "brand_refs": ["Apple", "Google", "Netflix", "IKEA", "Microsoft", "Nintendo", "traffic systems"],
     "jargon_avoid": true,
-    "pairing_ok": true
+    "title_vibe": ["How X works in the real world", "Inside the machine"],
+    "title_rules": {
+      "avoid_opaque_terms": true,
+      "rename_examples": [
+        {"bad": "Imaginary numbers", "good": "The square root of -1: an “impossible” idea that works"},
+        {"bad": "Dijkstra", "good": "How Google Maps finds the fastest route"}
+      ]
+    }
   },
-  "formats": { "quizzes": true, "projects": true, "problem_sets": true, "code_review": true },
+
+  "formats": {
+    "quizzes": true,
+    "projects": true,
+    "problem_sets": true,
+    "code_review": true,
+    "hands_on_fraction": 0.5,
+    "reading_fraction": 0.5,
+    "solo_fraction": 1.0,
+    "quiz_vs_challenge": {"quiz": 0.2, "challenge": 0.8},
+    "videos_ok": true,
+    "papers_ok_if_predigested": true
+  },
+
   "domains_core": ["Computer Science", "Game Design", "Architecture", "Physics", "Medicine", "Music Production"],
   "langs": { "human": ["Hungarian"], "code": ["JS/TS", "Python", "C++(learn)"] },
   "avoid": ["budgeting"],
-  "hooks": { "like_titles": ["How Google Maps works"], "dislike_titles": [] },
-  "novelty_vs_depth": { "novelty": 0.6, "depth": 0.4 },
-  "motivation": { "competition": true, "streaks": true, "teacher_storytelling": true },
-  "favorites_themes": [],
-  "hard_no": [],
+  "novelty_vs_depth": { "novelty": 0.5, "depth": 0.5 },
+
+  "motivation": {
+    "streaks": false,
+    "stakes": "none",
+    "competition_lite": true,
+    "nudges": ["playful_challenge", "narrative_hook"],
+    "suggest_hackathons_if_relevant": true
+  },
+
   "constraints": { "gear": "none", "budget": "no_limit" },
+
   "history": {
-    "learned": ["alg.monotonic_queue", "alg.zero_one_bfs", "alg.dials", "gt.mixed_penalty_kicks", "comp.lex"],
-    "learning": ["alg.dijkstra_invariants", "audio.compression_attack_release"]
+    "topics": {
+      "alg.monotonic_queue": "learned",
+      "alg.zero_one_bfs": "learned",
+      "alg.dials": "learned",
+      "alg.dijkstra_invariants": "learning",
+      "gt.mixed_penalty_kicks": "learned",
+      "comp.lex": "learned",
+      "audio.compression_attack_release": "learning"
+    },
+    "sessions": [
+      {
+        "id": "utc-iso",
+        "topic_ref": "slug",
+        "title_used": "string",
+        "duration_min": 15,
+        "fun_score": 5,
+        "notes": "short reflection"
+      }
+    ]
   }
 }
