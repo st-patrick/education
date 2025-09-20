@@ -60,14 +60,13 @@
       "Everyday Micro-Skills": ["Touch typing at 90+ WPM", "Memory palaces for names", "Speed reading without fakery"],
       "Creative Party Tricks": ["Rapid sketch portraits", "Cold reading (ethical demo)", "Short-form storytelling"]
     },
-    "other": {},
     "meta intellect (IQ, logic, math, reading comprehension, etc)": {
       "Decision Science for Builders": ["Bayes by back-of-the-envelope", "Fermi habits", "Red-team premortems"],
       "Learning Engineering": ["SRS you’ll keep", "Deliberate practice loops", "Atomic note systems"]
     },
     "being human (emotion, sense of self, pain management, etc)": {},
     "experience (things you can learn by doing)": {},
-    "Business & Product (no budgeting)": {
+    "Business & Product for indie hackers": {
       "Product Strategy": ["North-star metrics", "Experiment maps", "Pricing models"],
       "Go-to-Market for Devs": ["Positioning stories", "Channel tests", "Analytic guardrails"]
     },
@@ -75,37 +74,14 @@
       "Legal Systems in Practice": ["Investigations→trial flow", "Evidence & forensics basics", "Rights & limits"],
       "Tech & Law": ["IP primer", "Data protection basics", "Platform liability overview"]
     },
-    "History & Geopolitics": {
-      "Statecraft & Resources": ["Energy & trade chokepoints", "Currency power", "Sanctions mechanics"],
-      "Turning Points": ["Printing press", "Industrialization", "Internet & AI waves"]
-    },
-    "Design & Making": {
-      "Industrial Design Sprint": ["Brief→sketch→CAD", "Prototyping ladders", "DFM/DFA basics"],
-      "Woodworking (intermediate)": ["Dovetails", "Mortise & tenon", "Finishes & defects"]
-    },
-    "Media & Story": {
-      "Filmmaking Basics": ["Coverage & 180°", "One-light setups", "J/L cuts rhythm"],
-      "Data Storytelling": ["Visual encodings", "Misleading charts to avoid", "Narrative with numbers"]
-    },
-    "Nature & Fieldcraft": {
-      "Birding & Observation": ["Field marks & song ID", "Seasonality", "Notebook discipline"],
-      "Mycology Foundations": ["Morphology & safety", "Spore prints", "Habitat reading"]
-    },
     "Food & Drink": {
       "Cooking Techniques": ["Sear→rest", "Pan sauces", "Emulsions & gels"],
       "Coffee (Espresso)": ["Dose–yield–time", "Extraction curve", "Milk texture consistency"]
     },
-    "Aviation & Drones": {
-      "Drone Ops (legal & safe)": ["Airspace classes", "Pre-flight checklists", "Filming moves"],
-      "Pilot Theory (intro)": ["Weather basics", "Radio comms", "Navigation fundamentals"]
-    },
-    "Maritime & Seamanship": {
-      "Small-Boat Handling": ["Points of sail", "Tacking/gybing", "Rules of the road"],
-      "Coastal Nav": ["Charts & bearings", "Tides & currents", "Safety kit"]
-    }
+    "other": {}
   },
 
-  
+
   "flavor_queue_prioritized": {
     "1": {
       "abstract_algebra_category_pragmatic": ["objects_morphisms", "functors", "monoids_as_categories", "universal_properties", "adjunctions_intuition"],
