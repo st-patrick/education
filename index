@@ -20,7 +20,7 @@
       "startups", "coffee", "heists", "navigation/maps",
       "music studio", "architecture", "photography", "sports strategy", "cooking"
     ],
-    "brand_refs": ["Apple", "Google", "Netflix", "IKEA", "Microsoft", "Nintendo", "traffic systems"],
+    "brand_refs": ["Apple", "Google", "Instagram", "IKEA", "Microsoft", "Nintendo", "traffic systems"],
     "jargon_avoid": true,
     "title_vibe": ["How X works in the real world", "Inside the machine"],
     "title_rules": {
@@ -67,52 +67,6 @@
     "ask_feedback_each_session": true
   },
 
-  "history": {
-    "topics": {
-      "alg.monotonic_queue": "learned",
-      "alg.zero_one_bfs": "learned",
-      "alg.dials": "learned",
-      "alg.dijkstra_invariants": "learning",
-      "comp.lex": "learned",
-      "audio.compression_attack_release": "learning",
-      "alg.spatial_index_uniform_grid": "learned",
-      "film.audio_dialog_clarity": "learned"
-    },
-    "sessions": [
-      {
-        "ts_local": "2025-09-20T19:20:00+02:00",
-        "topic_ref": "alg.spatial_index_uniform_grid",
-        "title_used": "How your ride app picks a driver in seconds",
-        "duration_min": 15,
-        "notes": "Built simple grid index; tuned cell size until ~20× fewer checks.",
-        "feedback": {
-          "clarity": "high",
-          "story_flow": "good",
-          "pace": "snappy",
-          "challenge_fit": "good",
-          "novelty": "medium",
-          "notes": "Clean, crisp, motivating."
-        }
-      },
-      {
-        "ts_local": "2025-09-20T19:45:22+02:00",
-        "topic_ref": "film.audio_dialog_clarity",
-        "title_used": "Why movie dialog sounds muddy (and how pros fix it)",
-        "duration_min": 15,
-        "notes": "Mostly known; wants BTS/real-world references. Writing should be more story-driven.",
-        "feedback": {
-          "clarity": "ok",
-          "story_flow": "choppy",
-          "pace": "ok",
-          "challenge_fit": "light",
-          "novelty": "low",
-          "wants_bts": true,
-          "notes": "Summarize BTS then link; more narrative."
-        }
-      }
-    ]
-  },
-
   "title_feedback_log": [
     {
       "was": "Break ChatGPT’s text into tokens—and stitch it back",
@@ -125,5 +79,85 @@
       "fix": "Sound smooth in your first Hungarian exchange (8 lines for any café or shop)."
     }
   ],
-  "system_prompt": "You are an AI teacher and motivator for lifelong learners. Always pitch 3–5 main learning picks with real-world-first titles; optionally add the technical term in brackets. Finish with a long, skimmable comma-separated “explore” list of horizon topics. Teach in 15-minute, stackable chunks; Use story-led, plain language; avoid opaque terms unless explained inline. After each session, ask for general feedback on pedagogy (clarity, story flow, pace, challenge fit, novelty, notes) and incorporate it into the profile; store full ISO timestamps. When relevant, include a one-sentence BTS/industry teaser, then the link. If a topic maps to accredited curricula, mention that in the pitch including the institution accrediting it. Keep the profile minimal: store durable preferences, completed topics, and session feedback; do not store unpicked suggestions. Whatever notes you keep, keep them under 4000 tokens overall. When above limit, cut unnecessary filler words. Prioritize by what you can't infer and what will be relevant to future sessions. e.g. indivdual words of a vocabulary won't be."
+  "system_prompt": "You are an AI teacher and motivator for lifelong learners. Always pitch 3–5 main learning picks with real-world-first titles; optionally add the technical term in brackets. Finish with a long, skimmable comma-separated “explore” list of horizon topics. Teach in 15-minute, stackable chunks; Use story-led, plain language; avoid opaque terms unless explained inline. After each session, ask for general feedback on pedagogy (clarity, story flow, pace, challenge fit, novelty, notes) and incorporate it into the profile; store full ISO timestamps. When relevant, include a one-sentence BTS/industry teaser, then the link. If a topic maps to accredited curricula, mention that in the pitch including the institution accrediting it. Keep the profile minimal: store durable preferences, completed topics, and session feedback; do not store unpicked suggestions. Whatever notes you keep, keep them under 4000 tokens overall. When above limit, cut unnecessary filler words. Prioritize by what you can't infer and what will be relevant to future sessions. e.g. indivdual words of a vocabulary won't be.",
+  "patrick_prompt": "ok interesting. Now: just like in the game chat we have going on, I want you to always add lots and lots of BTS sections with links and quotes. Mix the textbook info with narrative styles like in those book like "steve jobs" or that GTA book by david kushner or "the innovators" and so on... Always make me feel like I'm right there where people have come up with those idaes",
+
+  "history": {
+    "topics": {
+      "alg.monotonic_queue": "learned",
+      "alg.zero_one_bfs": "learned",
+      "alg.dials": "learned",
+      "alg.dijkstra_invariants": "learning",
+      "comp.lex": "learned",
+      "audio.compression_attack_release": "learning",
+      "alg.spatial_index_uniform_grid": "learned",
+      "film.audio_dialog_clarity": "learned",
+      "design.typography_reading_speed": "learned"
+    },
+    "sessions": [
+      {
+        "ts_local": "2025-09-22T23:45:00+02:00",
+        "topic_ref": "design.typography_reading_speed",
+        "title_used": "Why some fonts read faster",
+        "duration_min": 10,
+        "notes": "Practical rules: 16–18px body, 45–75ch line length, LH 1.4–1.6, avoid ultra-light; distinguish I/l/1 and O/0; don’t full-justify without hyphenation."
+      },
+      {
+        "ts_local": "2025-09-20T19:20:00+02:00",
+        "topic_ref": "alg.spatial_index_uniform_grid",
+        "title_used": "How your ride app picks a driver in seconds",
+        "duration_min": 15
+      },
+      {
+        "ts_local": "2025-09-20T19:45:22+02:00",
+        "topic_ref": "film.audio_dialog_clarity",
+        "title_used": "Why movie dialog sounds muddy (and how pros fix it)",
+        "duration_min": 15,
+        "notes": "Mostly known; wants BTS/real-world references. Writing should be more story-driven.",
+      },
+      {
+        "ts_local": "2025-09-23T15:00:00+02:00",
+        "topic_ref": "games.adaptive_level",
+        "title_used": "Design a level that teaches itself",
+        "duration_min": 15,
+        "notes": "Two dials (laser spacing, guard cooldown) adjusted with small, spaced tweaks; logged decisions; target 40–60% clear rate.",
+        "feedback": "clear and hands-on; good pacing; likes narrative micro-heist framing; wants more BTS on adaptive design in shipped titles next time"
+      },
+      {
+        "ts_local": "2025-09-25T15:00:00+02:00",
+        "topic_ref": "idsec.passport_anti_counterfeit",
+        "title_used": "How passports foil counterfeiters",
+        "duration_min": 15,
+        "notes": "Examiner loop = TILT–LIGHT–TOUCH–SCAN: OVD/Kinegram tilt check, UV/IR + see-through art, tactile intaglio + polycarbonate laser-engraved data page, ePassport chip + PKI (ICAO 9303).",
+        "feedback": "great BTS and links; micro-build goal unclear at first—explain desired outcome up front; otherwise strong, story-led session"
+      },
+      {
+        "ts_local": "2025-09-26T11:30:00+02:00",
+        "topic_ref": "retail.ikea_path_ikea_effect",
+        "title_used": "IKEA’s maze & why you love what you build",
+        "duration_min": 15,
+        "notes": "Designed a forced-path pop-up coffee store with 2 shortcuts and 3 detours (brew micro-build, aroma tunnel, bundle bay). Metrics: exposure≥70%, 5–7 dwell spots, 3 impulse anchors. Tied path design to the IKEA Effect (successful micro-build increases valuation).",
+        "feedback": "great lesson. A bit more depth and relation to other retail strategies would be nice. micro build was great this time"
+      },
+      {
+        "ts_local": "2025-10-01T02:47:00+02:00",
+        "topic_ref": "recsys.instagram_ranking_basics",
+        "title_used": "Why your Instagram shows that post first",
+        "duration_min": 15,
+        "notes": "Built a tiny Feed ranker with three human signals (close_friend, freshness, interest_topic). Saw ranking ≠ sorting and how one dial flips the order. BTS covered per-surface ranking (Feed/Stories/Reels/Explore), signals IG discloses, and Explore’s multi-stage pipeline.",
+        "feedback": "not as interesting as I thought it would be. Mainly game theory. Not surprised though that Instagram isn't as interesting behind the scenes"
+      }      
+
+
+    ]
+  }  
 }
+
+
+JSON with majors, courses and micro-topics: essentially a detailed overview of what I'm learning in plain language but not yet getting into contents. Maybe links to possible future tests or content.
+Always tell me: what major am I sitting in, what class. What is this class about?
+What are the current sessions about?
+What do I need to know to understand this?
+LOVE „how this ties to your other strands“, drawing analogies to other topics and even majors! Perfection!
+
+if topics are not chosen over and over again, make them more relevant (Example instagram feed vs Netflix feed)
